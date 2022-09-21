@@ -1,0 +1,6 @@
+//- File with all Pug mixins
+
+mixin createList(...element)
+    ul(class=attributes.class)
+        each liItem in element
+            li!= liItem
