@@ -1,0 +1,35 @@
+-
+	const headerInfo = [
+		{
+			"img": "img/phone.svg",
+			"content": "+7 (8800) 5-05-55"
+		},
+		{
+			"img": "img/gps.svg",
+			"content": "Московская обл г.Москва ул Тверская 15"
+		}
+	];
+
+include ../mixin.pug
+
+header.header
+	.container
+		.header-top
+			img(src="img/logo.svg", alt="Логотип")
+			.header-top__info
+				each i in headerInfo
+					- ;
+					.header-top__elem
+						img(src=i.img, alt=i.content, title=i.content)
+						p= i.content
+						- ;
+	.header-bottom#main
+		.container
+			nav
+				a(href="#", class="menu-btn")
+					.burger
+						span
+					p Меню
+				.burger-menu
+					+createList("<a href=#main>Главная</a>", "<a href=#folk-art>Виды народного искусства</a>", "<a href=#mp>Мепроприятия</a>", "<a href=#order>Заказ билетов</a>")(class="header-bottom__navigation-mobile")
+				+createList("<a href=#main>Главная</a>", "<a href=#folk-art>Виды народного искусства</a>", "<a href=#mp>Мепроприятия</a>", "<a href=#order>Заказ билетов</a>")(class="header-bottom__navigation")
