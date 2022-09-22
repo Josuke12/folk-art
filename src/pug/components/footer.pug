@@ -1,0 +1,15 @@
+footer.footer
+	.container
+		.footer__top
+			img(src="img/logo2.svg", alt="лого")
+			nav
+				+createList("<a href=#main>Главная</a>", "<a href=#folk-art>Виды народного искусства</a>", "<a href=#mp>Мероприятия</a>", "<a href=#order>Заказ билетов</a>")(class="footer__nav-list")
+			.footer__info
+				.footer__elem
+					img(src="img/phone.svg", alt="")
+					p +7 (8800) 5-05-55
+				.footer__elem
+					img(src="img/gps.svg", alt="")
+					p Московская обл г.Москва ул Тверская 15
+		.footer__bottom
+			p © ЗУБОВА ПОЛЯНА 2022
