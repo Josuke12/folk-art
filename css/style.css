@@ -367,4 +367,76 @@ button, input {
   margin-bottom: 0.5rem;
 }
 
+.order {
+  max-width: 39.3rem;
+  margin: auto;
+}
+.order .title {
+  text-align: center;
+  margin: 10rem 0 4rem;
+}
+.order__forms {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.order__forms > input {
+  width: 100%;
+  max-width: 38.6rem;
+  max-height: 8.2rem;
+  height: 100vh;
+  background: #C4C4C4;
+  color: #000;
+  font-size: 1.6rem;
+}
+.order__forms > input:not(:last-child) {
+  margin-bottom: 1.7rem;
+}
+.order__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5.8rem;
+}
+.order__buttons input {
+  max-width: 38.6rem;
+  max-height: 6.5rem;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+.order__buttons input:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+.order__buttons #order__create {
+  background: #A21D22;
+  color: #fff;
+}
+.order__buttons #order__reset {
+  background: #fff;
+  border: 1px solid #A21D22;
+}
+
+@media (max-width: 670px) {
+  .order .title {
+    margin: 5rem 0 2.5rem;
+  }
+  .order__forms input {
+    max-width: 29rem;
+  }
+  .order__forms > input {
+    max-height: 8.2rem;
+  }
+  .order__forms > input:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  .order__buttons {
+    margin-top: 1.5rem;
+  }
+  .order__buttons input:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+section.order#order
+	+addTitle('Заказ билетов')
+	form(action="#", method="POST", class="order__forms")
+		input(type="text", placeholder="Ваше имя")
+		input(type="tel", placeholder="Контактный телефон")
+		input(type="email", placeholder="Email")
+		.order__buttons
+			input(type="submit", value="Заказать билет", id="order__create")
+			input(type="reset", value="Очистить форму", id="order__reset")

@@ -1,0 +1,80 @@
+.order {
+	max-width: 39.3rem;
+	margin: auto;
+	.title {
+		text-align: center;
+		margin: 10rem 0 4rem;
+	}
+	&__forms {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		> input {
+			width: 100%;
+			max-width: 38.6rem;
+			max-height: 8.2rem;
+			height: 100vh;
+			background: #C4C4C4;
+			color: #000;
+			font-size: 1.6rem;
+
+			&:not(:last-child) {
+				margin-bottom: 1.7rem;
+			}
+		}
+	}
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 5.8rem;
+
+		input {
+			max-width: 38.6rem;
+			max-height: 6.5rem;
+			width: 100vw;
+			height: 100vh;
+			font-size: 1.6rem;
+			border-radius: 5px;
+
+			&:not(:last-child) {
+				margin-bottom: 2.5rem;
+			}
+		}
+		#order__create {
+			background: #A21D22;
+			color: #fff;
+		}
+		#order__reset {
+			background: #fff;
+			border: 1px solid #A21D22;
+		}
+	}
+}
+
+@media (max-width: 670px) {
+	.order {
+		.title {
+			margin: 5rem 0 2.5rem;
+		}
+		&__forms {
+			input {
+				max-width: 29rem;
+			}
+			> input {
+				max-height: 8.2rem;
+				&:not(:last-child) {
+					margin-bottom: 1.5rem;
+				}
+			}
+		}
+		&__buttons {
+			margin-top: 1.5rem;
+			input {
+				&:not(:last-child) {
+					margin-bottom: 1.5rem;
+				}
+			}
+		}
+	}
+}
