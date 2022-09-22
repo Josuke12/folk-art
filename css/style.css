@@ -243,5 +243,81 @@ button, input {
     margin-right: 0.456rem;
   }
 }
+.title {
+  font-size: 3.6rem;
+  line-height: 117%;
+  text-transform: uppercase;
+  margin: 10rem 0 3rem;
+}
+
+.folk-arts__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+}
+.folk-arts__art {
+  max-width: 38.7rem;
+  width: 100%;
+}
+.folk-arts__art img {
+  max-width: 38.7rem;
+  max-height: 24.9rem;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-right: 1rem;
+}
+.folk-arts__art h3 {
+  font-size: 2.6rem;
+  line-height: 117%;
+  margin: 2rem 0 1.5rem;
+}
+.folk-arts__art p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 118%;
+  margin-bottom: 1.5rem;
+}
+.folk-arts__art a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 20.451rem;
+  max-height: 6.5rem;
+  height: 100vh;
+  width: 100%;
+  background: #A21D22;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  line-height: 118%;
+  color: #fff;
+}
+
+@media (max-width: 670px) {
+  .folk-arts__list {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 2rem;
+  }
+  .folk-arts__art {
+    flex-direction: column;
+    margin: auto;
+    max-width: 29rem;
+    padding: 0 1rem 0;
+  }
+  .folk-arts__art img {
+    padding-right: 0;
+    max-width: 29rem;
+    max-height: 19.1rem;
+  }
+  .folk-arts__art h3 {
+    margin: 1.5rem 0 0.5rem;
+  }
+  .folk-arts__art p {
+    max-width: 29rem;
+    margin-bottom: 1rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

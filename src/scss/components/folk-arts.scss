@@ -1,0 +1,74 @@
+.folk-arts {
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 2rem;
+	}
+	&__art {
+		max-width: 38.7rem;
+		width: 100%;
+		img {
+			max-width: 38.7rem;
+			max-height: 24.9rem;
+			border-radius: 5px;
+			overflow: hidden;
+			padding-right: 1rem;
+		}
+		h3 {
+			font-size: 2.6rem;
+			line-height: 117%;
+			margin: 2rem 0 1.5rem;
+		}
+		p {
+			font-weight: 400;
+			font-size: 1.6rem;
+			line-height: 118%;
+			margin-bottom: 1.5rem;
+		}
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 20.451rem;
+			max-height: 6.5rem;
+			height: 100vh;
+			width: 100%;
+			background: #A21D22;
+			border-radius: 5px;
+			font-size: 1.6rem;
+			line-height: 118%;
+			color: #fff;
+		}
+	}
+}
+
+@media (max-width: 670px) {
+	.folk-arts {
+		&__list {
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: 100%;
+			grid-column-gap: 0;
+			grid-row-gap: 2rem;
+		}
+		&__art {
+			
+			flex-direction: column;
+			margin: auto;
+			max-width: 29rem;
+			padding: 0 1rem 0;
+			img {
+				padding-right: 0;
+				max-width: 29rem;
+				max-height: 19.1rem;
+			}
+			h3 {
+				margin: 1.5rem 0 .5rem;
+			}
+			p {
+				max-width: 29rem;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}

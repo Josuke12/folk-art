@@ -1,6 +1,10 @@
 //- File with all Pug mixins
 
 mixin createList(...element)
-    ul(class=attributes.class)
-        each liItem in element
-            li!= liItem
+	ul(class=attributes.class)
+		each liItem in element
+			li!= liItem
+			- ;
+
+mixin addTitle(title)
+	h2.title= title
