@@ -1,0 +1,18 @@
+- let j = 0;
+
+section.mp#mp
+	+addTitle('Мероприятия')
+	.mp__list
+		while j < 8
+			.mp__item
+				img(src="img/mp.jpg", alt="Мероприятие")
+				h3 Выставка «Пришёл. Увидел. Победил. » 12+
+				.mp__meta
+					img(src="img/date.svg" alt="Дата")
+					p.
+						до 31 декабря, <br>
+						вт–вс 12:00–19:00
+				.mp__meta
+					img(src="img/gps.svg" alt="Место")
+					p Музей Международного нумизматического клуба, пер. Большой Афанасьевский, д. 24
+			- j += 1;
